@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the whole page */
+
+ margin: 0; /* Removes default browser margin */
+
+ background: #f4f4f4; /* Sets light gray background color */
+
+ font-family: Arial, sans-serif; /* Sets the default font for the whole page */
+
+ margin: 0; /* Removes default browser margin */
+
+ background: #f4f4f4; /* Sets light gray background color */
+
+ }
+
+header {
+
+  background-image: url('boarder.png'); /* set the header image */
+
+  background-repeat: no-repeat;         /* don't repeat image */
+
+  background-position: center top;      /* align top center */
+
+  background-size: 100% auto;           /* stretch width only, keep original height */
+
+  color: white;                         /* header text color */
+
+  padding: 20px;                        /* space inside header */
+
+  text-align: center;                   /* center the text */
+
+  background-color: #020cd3ca;          /* fallback color if image is smaller */
+}
+
+   /* classes for letter styling */
+
+.letter-p {
+
+  
+    color: rgb(148, 15, 192);    /* change P to red */
+}
+
+.letter-v {
+
+  
+    color: rgb(175, 5, 5);   /* change V to blue */
+}
+
+.welcome-text {
+
+  font-size: 2rem;          /* size for "Welcome to" */
+
+  margin-bottom: 0.2em;     /* small space below */
+}
+  /* ============================================================================== */
+
+ nav {
+
+ background: #171f28; /* Sets medium blue background for navigation bar */
+
+ padding: 10px; /* Adds inner spacing for nav bar */
+
+ text-align: center; /* Centers the nav links */
+
+ }
+
+ nav a {
+
+ color: white; /* Sets link text color to white */
+
+ margin: 0 15px; /* Adds horizontal spacing between menu items */
+
+ text-decoration: none; /* Removes underline from links */
+
+ font-weight: bold; /* Makes navigation text bold */
+ 
+
+ }
+
+.hero {
+
+  
+  background-image: url('banner.png');
+  
+  /* Sets hero image, prevents repeating, centers it, and adjusts to cover area */
+  
+
+
+  background-repeat: no-repeat; /* Make background not repeat */
+  
+  background-position: center;  /* Allow background be position center */
+  
+  background-size: cover; /* Fills the area automatically */
+
+  min-height: 350px; /* Minimum height */
+  
+  height: 50vh;  /* Responsive height (50% of screen) */
+
+  display: flex; /* Enables flexbox for centering content */
+  
+  justify-content: flex-start; /* Horizontally centers content */
+  
+  align-items: center; /* Makes align-item center */
+
+  padding-left: 90px; /* Help text aligned properly */
+
+  color: white; /* Sets hero text color to white */
+  
+  font-size: 3.6rem; /* Sets large text size */
+  
+  font-weight: bold; /* Makes text bold */
+  
+  text-align: left; /* Makes text left-aligned */
+  
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds shadow for readability */
+}
+
+
+
+ section {
+
+ padding: 40px; /* Adds inner spacing inside sections */
+
+ max-width: 1100px; /* Limits section width for better layout */
+
+ margin: auto; /* Centers section in the page */
+
+ background: white; /* Sets white background for content */
+
+ margin-top: 20px; /* Adds space above each section */
+
+ border-radius: 10px; /* Rounds the section corners */
+
+ }
+
+ h2 {
+
+ color: #7d1a1a; /* Sets heading color to dark blue */
+
+ }
+
+ .footer {
+
+ text-align: center; /* Centers footer text */
+
+ padding: 20px; /* Adds padding inside footer */
+
+ background: #031222; /* Sets footer background color */
+
+ color: white; /* Sets footer text color */
+
+ margin-top: 20px; /* Adds spacing above footer */
+
+ }
+
+/* Responsive Adjustments */
+
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+
+  .hero {
+    padding-left: 40px;
+    font-size: 1.8rem;
+    min-height: 300px;
+  }
+
+  section {
+    padding: 30px;
+  }
+}
+
+/* Tablets & large phones */
+@media (max-width: 768px) {
+
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
+
+  .hero {
+    padding-left: 25px;
+    font-size: 1.5rem;
+    min-height: 260px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header h3 {
+    font-size: 1rem;
+  }
+
+  section {
+    margin: 15px;
+    padding: 25px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .hero {
+    padding-left: 15px;
+    font-size: 1.2rem;
+    min-height: 220px;
+  }
+
+  nav {
+    padding: 15px 5px;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+/* Showcasing */
+
+#paint {
+  padding: 40px;
+  text-align: center;
+}
+
+.paint-gallery {
+  margin-top: 20px;
+}
+
+.paint-image {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
